@@ -15,7 +15,11 @@ connectDB();
 // app.use(cors({ 
 //   origin: ["*"],
 // }));
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173'], // Replace with your frontend URL
+  methods: 'GET, POST, PUT, DELETE',
+  credentials: true // Include this if cookies are involved
+  }));
 
 // Middleware
 app.use(express.json());
