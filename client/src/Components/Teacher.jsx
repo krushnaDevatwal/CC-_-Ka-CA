@@ -5,7 +5,7 @@ const AddTeacher = () => {
     const [teachers, setTeachers] = useState([]);
     const [newTeacher, setNewTeacher] = useState({ name: "", email: "" });
     const [teacherBtn, setTeacherBtn] = useState("Add Teacher");
-    const BASE_URL = "http://localhost:3000/api";
+    const BASE_URL = "https://cc-ka-ca.onrender.com/api";
     const getTeachers = `${BASE_URL}/teachers`;
     const postTeacher = `${BASE_URL}/addTeacher`;
 
